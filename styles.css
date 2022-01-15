@@ -1,6 +1,31 @@
+section{
+    max-width: 1440px;
+    padding: 0 0 100px 0;
+}
 .blue {
     background-color: #006BB6;
 }
 .text-blue{
     color: #006BB6;
+}
+.list-group{
+    display: flex;
+    flex-direction: row;
+    max-width: 1130px;
+    justify-content: space-between;
+    margin-left: 150px;
+}
+.item-text{
+    font-size: 20px;
+    border: none;
+    width: 630px;
+}
+
+.marked{
+    border: none;
+    font-size: 20px;
+}
+.points{
+    border: none;
+    font-size: 20px;
 }
