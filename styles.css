@@ -29,3 +29,16 @@ section{
     border: none;
     font-size: 20px;
 }
+.parts{
+    margin: 10px auto;
+}
+.part {
+    border: 2px solid #006BB6;
+    height: 290px;
+    max-height: 300px;
+}
+.inputCode{
+    border: 2px solid #006BB6;
+    height: 580px;
+    max-height: 600px;
+}
