@@ -124,8 +124,17 @@ section{
 }
 .logIn__passwordReset{
     color: #cdcdcd;
-    width: 75%;
-    text-align: right;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+}
+.logIn__passwordResetText{
+    color: #cdcdcd;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
 }
 .logIn__regLink{
     margin: 10px auto 0;
@@ -157,15 +166,12 @@ section{
     bottom: 0%;
     right: 0;
 }
-.logIn__passwordReset{
-    font-size: 15px;
-    margin: 15px;
-}
 .regButton{
     margin: 25px auto;
     width: 45%;
 }
 .start{
+    height: 100vh;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('images/backgroundmain.png');
     background-size: cover;
     display: flex;
