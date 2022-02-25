@@ -1,6 +1,6 @@
 body{
     height: 100vh;
-    overflow: hidden;
+    overflow: scroll;
 }
 section{
     max-width: 1440px;
@@ -177,4 +177,14 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.check{
+    margin: auto;
+}
+.addGroup{
+    display: flex;
+    justify-content: end;
+    margin: 50px;
+    max-width:50%;
 }
