@@ -188,3 +188,8 @@ section{
     margin: 50px;
     max-width:50%;
 }
+#editor {
+    position: relative;
+    border: black 2px solid;
+    width: 50%;
+}
