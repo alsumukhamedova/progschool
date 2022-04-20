@@ -1,10 +1,10 @@
 body{
     height: 100vh;
     overflow: hidden;
+    padding: 0 0 100px 0;
 }
 section{
     max-width: 1440px;
-    padding: 0 0 100px 0;
 }
 .blue {
     background-color: #006BB6;
@@ -15,35 +15,88 @@ section{
 .text-blue{
     color: #006BB6;
 }
-.tasksContainer{
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.transparentColor{
+    background-color: rgba(141, 177, 27, 0.28);
 }
-.list-group{
-    display: flex;
-    flex-direction: row;
-    max-width: 1130px;
-    justify-content: space-between;
-    margin-left: 150px;
+.tasksContainer{
+    background: #FFFFFF;
+    border: 3px solid #8DB11B;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 5px 15px;
 }
 .item-text{
     font-size: 20px;
-    border: none;
-    width: 630px;
+    color: black;
+    margin-top: 10px;
+    max-height: 300px;
 }
 .marked{
     border: none;
     font-size: 20px;
+    width: 13%;
+    font-weight: bolder;
+    margin-top: 5px;
 }
-.points{
-    border: none;
-    font-size: 20px;
+@media screen and (max-width: 1050px){
+    .marked{
+        width: 100%;
+        font-weight: normal;
+
+    }
+}
+@media screen and (max-width: 1500px){
+    .marked{
+        font-size: 20px;
+        width: 15%;
+    }
+}
+.options{
+    display: flex;
+    justify-content: right;
+}
+@media screen and (max-width: 1050px){
+    .options{
+        width: 100%;
+    }
+}
+#taskNames{
+    overflow-y: scroll;
+    background-color: #ffffff;
+    height: 400px;
+}
+@media screen and (min-width: 1600px){
+    #taskNames{
+        height: 700px;
+    }
+}
+@media screen and (max-width: 1300px){
+    #taskNames{
+        height: 300px;
+    }
+}
+#taskNames::-webkit-scrollbar {
+    width: 20px;
+    background-color: #f9f9fd;
+}
+#taskNames::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #8DB11B;
+}
+#taskNames::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    background-color: rgba(141, 177, 27, 0.28)
 }
 .parts{
     margin: 10px auto 15px;
     height: 98%;
+}
+@media screen and (max-width: 1000px){
+    .parts{
+        height: 80%;
+    }
 }
 .taskDescription {
     max-height: 300px;
@@ -92,6 +145,11 @@ section{
     height: 50px;
     font-size: 20px;
     padding: 0;
+}
+@media screen and (max-width: 1440px){
+    .saveProfileButton{
+        width: 50%;
+    }
 }
 .editProfileButton{
     margin: 0;
@@ -202,7 +260,11 @@ section{
     align-items: center;
 }
 .check{
-    margin: auto;
+    margin-top: auto;
+    margin-right: 25%;
+    color: #006BB6;
+    width: 20px;
+    height: 20px;
 }
 .addGroup{
     display: flex;
@@ -217,6 +279,12 @@ section{
     font-size: 18px;
     padding: 0;
 }
+@media screen and (max-width: 1200px){
+    .saveSolutionButton{
+        width: 50%;
+        height: 40px;
+    }
+}
 .ace{
     display: flex;
     width: 35%;
@@ -227,6 +295,12 @@ section{
     height: 50px;
     font-size: 18px;
     padding: 0;
+}
+@media screen and (max-width: 1200px){
+    .ace{
+        width: 50%;
+        height: 40px;
+    }
 }
 .taskFooter{
     display: flex;
